@@ -1,0 +1,2269 @@
+local vec3 = require "vec3"
+local transf = require "transf"
+
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 11.8215, 1.44264, 4.14623, },
+		bbMin = { -11.8215, -1.44264, -0.0806, },
+	},
+	collider = {
+		params = { },
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "MESH",
+	},
+	lods = {
+		{
+            node = {
+			    children = {
+				    {
+                        materials = { "vehicle/train/br627.0_DBAG_rumpf.mtl", },
+					    mesh = "vehicle/train/br627/br627.0_body.msh",
+					    transf = {
+						    1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0,
+					    },
+				    },
+                    {
+					    children = {
+		                    {
+                    			materials = { "vehicle/train/br627.0_rumpf.mtl", },
+                                mesh = "vehicle/train/br627/br627_bogie.msh",
+			                    transf = {
+				                    1.0, -0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, -0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0,
+			                    },
+		                    }, {
+                                materials = { "vehicle/train/br627.0_rumpf.mtl", },
+			                    mesh = "vehicle/train/br627/br627_rad.msh",
+			                    transf = {
+				                    1.0, -0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, -0.0, 0.0, 1.0, 0.0, 1.18645, -0.00161, 0.40246, 1.0,
+			                    },
+		                    }, {
+			                    materials = { "vehicle/train/br627.0_rumpf.mtl", },
+			                    mesh = "vehicle/train/br627/br627_rad.msh",
+			                    transf = {
+				                    1.0, -0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, -0.0, 0.0, 1.0, 0.0, -1.18645, -0.00161, 0.40246, 1.0,
+			                    },
+		                    },
+	                    },
+					    transf = {
+						    1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 7.4, 0.0, 0.01505, 1.0,
+					    },
+				    },
+				    {
+					    children = {
+		                    {
+                    			materials = { "vehicle/train/br627.0_rumpf.mtl", },
+                                mesh = "vehicle/train/br627/br627_bogie.msh",
+			                    transf = {
+				                    1.0, -0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, -0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0,
+			                    },
+		                    }, {
+                                materials = { "vehicle/train/br627.0_rumpf.mtl", },
+			                    mesh = "vehicle/train/br627/br627_rad.msh",
+			                    transf = {
+				                    1.0, -0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, -0.0, 0.0, 1.0, 0.0, 1.18645, -0.00161, 0.40246, 1.0,
+			                    },
+		                    }, {
+			                    materials = { "vehicle/train/br627.0_rumpf.mtl", },
+			                    mesh = "vehicle/train/br627/br627_rad.msh",
+			                    transf = {
+				                    1.0, -0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, -0.0, 0.0, 1.0, 0.0, -1.18645, -0.00161, 0.40246, 1.0,
+			                    },
+		                    },
+	                    },
+					    transf = {
+						    1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, -7.4, 0.0, 0.01505, 1.0,
+					    },
+				    },
+				    {
+					    materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+                        mesh = "vehicle/train/br627/br627.0_backlight.msh",
+					    transf = {
+						    1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0,
+					    },
+				    },
+				    {
+					    materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+                        mesh = "vehicle/train/br627/br627.0_light.msh",
+					    transf = {
+						    1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0,
+					    },
+				    },
+				    {
+                        materials = { "vehicle/train/br627.0_rumpf.mtl", },
+					    mesh = "vehicle/train/br627/br627.0_puffer.msh",
+					    transf = {
+						    1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0,
+					    },
+				    },
+				    {
+                        materials = { "vehicle/train/br627_glass.mtl", },
+					    mesh = "vehicle/train/br627/br627.0_glass.msh",
+					    transf = {
+						    1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0,
+					    },
+				    },
+				    {
+                        animations = {
+		                    close_all_doors = {
+			                    forward = false,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0.8, 0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+                            close_doors_left = {
+			                    forward = false,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0.8, 0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+                            open_all_doors = {
+			                    forward = true,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0.8, 0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+                            open_doors_left = {
+			                    forward = true,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0.8, 0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+	                    },
+                        materials = { "vehicle/train/br627.0_rumpf.mtl", "vehicle/train/br627_glass.mtl", },
+					    mesh = "vehicle/train/br627/tur_1l.msh",
+					    transf = {
+						    1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0,
+					    },
+				    },
+				    {
+					    animations = {
+		                    close_all_doors = {
+			                    forward = false,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, -0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0.8, -0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+                            close_doors_right = {
+			                    forward = false,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, -0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0.8, -0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+                            open_all_doors = {
+			                    forward = true,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, -0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0.8, -0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+                            open_doors_right = {
+			                    forward = true,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, -0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0.8, -0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+	                    },
+                        materials = { "vehicle/train/br627.0_rumpf.mtl", "vehicle/train/br627_glass.mtl", },
+					    mesh = "vehicle/train/br627/tur_1r.msh",
+					    transf = {
+						    1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0,
+					    },
+				    },
+				    {
+					    animations = {
+		                    close_all_doors = {
+			                    forward = false,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { -0.8, 0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+                            close_doors_left = {
+			                    forward = false,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { -0.8, 0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+                            open_all_doors = {
+			                    forward = true,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { -0.8, 0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+                            open_doors_left = {
+			                    forward = true,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { -0.8, 0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+	                    },
+                        materials = { "vehicle/train/br627.0_rumpf.mtl", "vehicle/train/br627_glass.mtl", },
+					    mesh = "vehicle/train/br627/tur_2l.msh",
+					    transf = {
+						    1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0,
+					    },
+				    },
+				    {
+					    animations = {
+		                    close_all_doors = {
+			                    forward = false,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, -0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { -0.8, -0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+                            close_doors_right = {
+			                    forward = false,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, -0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { -0.8, -0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+                            open_all_doors = {
+			                    forward = true,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, -0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { -0.8, -0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+                            open_doors_right = {
+			                    forward = true,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, -0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { -0.8, -0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+	                    },
+                        materials = { "vehicle/train/br627.0_rumpf.mtl", "vehicle/train/br627_glass.mtl", },
+					    mesh = "vehicle/train/br627/tur_2r.msh",
+					    transf = {
+						    1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0,
+					    },
+				    },
+				    {
+                        materials = { "vehicle/train/br627.0_rumpf.mtl", },
+					    mesh = "vehicle/train/br627/br627.0_innen.msh",
+					    transf = {
+						    1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0,
+					    },
+				    },
+                    {
+					    materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+                        mesh = "vehicle/train/br627/br627.0_backlight.msh",
+					    transf = {
+						    -1.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0,
+					    },
+				    },
+				    {
+					    materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+                        mesh = "vehicle/train/br627/br627.0_light.msh",
+					    transf = {
+						    -1.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0,
+					    },
+				    },
+                    {
+					    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				    },
+				},
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+		    static = false,
+		    visibleFrom = 0,
+		    visibleTo = 200,
+        },
+        {
+            node = {
+			    children = {
+				    {
+                        materials = { "vehicle/train/br627.0_DBAG_rumpf.mtl", },
+					    mesh = "vehicle/train/br627/br627.0_body_LOD1.msh",
+					    transf = {
+						    1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0,
+					    },
+				    },
+                    {
+					    children = {
+		                    {
+                    			materials = { "vehicle/train/br627.0_rumpf.mtl", },
+                                mesh = "vehicle/train/br627/br627_bogie_LOD1.msh",
+			                    transf = {
+				                    1.0, -0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, -0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0,
+			                    },
+		                    }, {
+                                materials = { "vehicle/train/br627.0_rumpf.mtl", },
+			                    mesh = "vehicle/train/br627/br627_rad_LOD1.msh",
+			                    transf = {
+				                    1.0, -0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, -0.0, 0.0, 1.0, 0.0, 1.18645, -0.00161, 0.40246, 1.0,
+			                    },
+		                    }, {
+			                    materials = { "vehicle/train/br627.0_rumpf.mtl", },
+			                    mesh = "vehicle/train/br627/br627_rad_LOD1.msh",
+			                    transf = {
+				                    1.0, -0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, -0.0, 0.0, 1.0, 0.0, -1.18645, -0.00161, 0.40246, 1.0,
+			                    },
+		                    },
+	                    },
+					    transf = {
+						    1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 7.4, 0.0, 0.01505, 1.0,
+					    },
+				    },
+				    {
+					    children = {
+		                    {
+                    			materials = { "vehicle/train/br627.0_rumpf.mtl", },
+                                mesh = "vehicle/train/br627/br627_bogie_LOD1.msh",
+			                    transf = {
+				                    1.0, -0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, -0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0,
+			                    },
+		                    }, {
+                                materials = { "vehicle/train/br627.0_rumpf.mtl", },
+			                    mesh = "vehicle/train/br627/br627_rad_LOD1.msh",
+			                    transf = {
+				                    1.0, -0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, -0.0, 0.0, 1.0, 0.0, 1.18645, -0.00161, 0.40246, 1.0,
+			                    },
+		                    }, {
+			                    materials = { "vehicle/train/br627.0_rumpf.mtl", },
+			                    mesh = "vehicle/train/br627/br627_rad_LOD1.msh",
+			                    transf = {
+				                    1.0, -0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, -0.0, 0.0, 1.0, 0.0, -1.18645, -0.00161, 0.40246, 1.0,
+			                    },
+		                    },
+	                    },
+					    transf = {
+						    1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, -7.4, 0.0, 0.01505, 1.0,
+					    },
+				    },
+				    {
+					    materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+                        mesh = "vehicle/train/br627/br627.0_backlight.msh",
+					    transf = {
+						    1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0,
+					    },
+				    },
+				    {
+					    materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+                        mesh = "vehicle/train/br627/br627.0_light.msh",
+					    transf = {
+						    1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0,
+					    },
+				    },
+				    {
+                        materials = { "vehicle/train/br627.0_rumpf.mtl", },
+					    mesh = "vehicle/train/br627/br627.0_puffer_LOD1.msh",
+					    transf = {
+						    1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0,
+					    },
+				    },
+				    {
+                        materials = { "vehicle/train/br627_glass.mtl", },
+					    mesh = "vehicle/train/br627/br627.0_glass_LOD1.msh",
+					    transf = {
+						    1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0,
+					    },
+				    },
+				    {
+                        animations = {
+		                    close_all_doors = {
+			                    forward = false,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0.8, 0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+                            close_doors_left = {
+			                    forward = false,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0.8, 0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+                            open_all_doors = {
+			                    forward = true,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0.8, 0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+                            open_doors_left = {
+			                    forward = true,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0.8, 0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+	                    },
+                        materials = { "vehicle/train/br627.0_rumpf.mtl", "vehicle/train/br627_glass.mtl", },
+					    mesh = "vehicle/train/br627/tur_1l_LOD1.msh",
+					    transf = {
+						    1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0,
+					    },
+				    },
+				    {
+					    animations = {
+		                    close_all_doors = {
+			                    forward = false,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, -0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0.8, -0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+                            close_doors_right = {
+			                    forward = false,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, -0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0.8, -0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+                            open_all_doors = {
+			                    forward = true,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, -0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0.8, -0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+                            open_doors_right = {
+			                    forward = true,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, -0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0.8, -0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+	                    },
+                        materials = { "vehicle/train/br627.0_rumpf.mtl", "vehicle/train/br627_glass.mtl", },
+					    mesh = "vehicle/train/br627/tur_1r_LOD1.msh",
+					    transf = {
+						    1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0,
+					    },
+				    },
+				    {
+					    animations = {
+		                    close_all_doors = {
+			                    forward = false,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { -0.8, 0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+                            close_doors_left = {
+			                    forward = false,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { -0.8, 0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+                            open_all_doors = {
+			                    forward = true,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { -0.8, 0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+                            open_doors_left = {
+			                    forward = true,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { -0.8, 0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+	                    },
+                        materials = { "vehicle/train/br627.0_rumpf.mtl", "vehicle/train/br627_glass.mtl", },
+					    mesh = "vehicle/train/br627/tur_2l_LOD1.msh",
+					    transf = {
+						    1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0,
+					    },
+				    },
+				    {
+					    animations = {
+		                    close_all_doors = {
+			                    forward = false,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, -0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { -0.8, -0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+                            close_doors_right = {
+			                    forward = false,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, -0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { -0.8, -0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+                            open_all_doors = {
+			                    forward = true,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, -0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { -0.8, -0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+                            open_doors_right = {
+			                    forward = true,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, -0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { -0.8, -0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+	                    },
+                        materials = { "vehicle/train/br627.0_rumpf.mtl", "vehicle/train/br627_glass.mtl", },
+					    mesh = "vehicle/train/br627/tur_2r_LOD1.msh",
+					    transf = {
+						    1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0,
+					    },
+				    },
+                    {
+					    materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+                        mesh = "vehicle/train/br627/br627.0_backlight.msh",
+					    transf = {
+						    -1.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0,
+					    },
+				    },
+				    {
+					    materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+                        mesh = "vehicle/train/br627/br627.0_light.msh",
+					    transf = {
+						    -1.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0,
+					    },
+				    },
+                    {
+					    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				    },
+				},
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+		    static = false,
+		    visibleFrom = 200,
+		    visibleTo = 400,
+        },
+        {
+            node = {
+			    children = {
+				    {
+                        materials = { "vehicle/train/br627.0_DBAG_rumpf.mtl", },
+					    mesh = "vehicle/train/br627/br627.0_body_LOD2.msh",
+					    transf = {
+						    1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0,
+					    },
+				    },
+                    {
+					    children = {
+		                    {
+                    			materials = { "vehicle/train/br627.0_rumpf.mtl", },
+                                mesh = "vehicle/train/br627/br627_bogie_LOD2.msh",
+			                    transf = {
+				                    1.0, -0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, -0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0,
+			                    },
+		                    }, {
+                                materials = { "vehicle/train/br627.0_rumpf.mtl", },
+			                    mesh = "vehicle/train/br627/br627_rad_LOD2.msh",
+			                    transf = {
+				                    1.0, -0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, -0.0, 0.0, 1.0, 0.0, 1.18645, -0.00161, 0.40246, 1.0,
+			                    },
+		                    }, {
+			                    materials = { "vehicle/train/br627.0_rumpf.mtl", },
+			                    mesh = "vehicle/train/br627/br627_rad_LOD2.msh",
+			                    transf = {
+				                    1.0, -0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, -0.0, 0.0, 1.0, 0.0, -1.18645, -0.00161, 0.40246, 1.0,
+			                    },
+		                    },
+	                    },
+					    transf = {
+						    1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 7.4, 0.0, 0.01505, 1.0,
+					    },
+				    },
+				    {
+					    children = {
+		                    {
+                    			materials = { "vehicle/train/br627.0_rumpf.mtl", },
+                                mesh = "vehicle/train/br627/br627_bogie_LOD2.msh",
+			                    transf = {
+				                    1.0, -0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, -0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0,
+			                    },
+		                    }, {
+                                materials = { "vehicle/train/br627.0_rumpf.mtl", },
+			                    mesh = "vehicle/train/br627/br627_rad_LOD2.msh",
+			                    transf = {
+				                    1.0, -0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, -0.0, 0.0, 1.0, 0.0, 1.18645, -0.00161, 0.40246, 1.0,
+			                    },
+		                    }, {
+			                    materials = { "vehicle/train/br627.0_rumpf.mtl", },
+			                    mesh = "vehicle/train/br627/br627_rad_LOD2.msh",
+			                    transf = {
+				                    1.0, -0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, -0.0, 0.0, 1.0, 0.0, -1.18645, -0.00161, 0.40246, 1.0,
+			                    },
+		                    },
+	                    },
+					    transf = {
+						    1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, -7.4, 0.0, 0.01505, 1.0,
+					    },
+				    },
+				    {
+					    materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+                        mesh = "vehicle/train/br627/br627.0_backlight.msh",
+					    transf = {
+						    1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0,
+					    },
+				    },
+				    {
+					    materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+                        mesh = "vehicle/train/br627/br627.0_light.msh",
+					    transf = {
+						    1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0,
+					    },
+				    },
+				    {
+                        materials = { "vehicle/train/br627.0_rumpf.mtl", },
+					    mesh = "vehicle/train/br627/br627.0_puffer_LOD1.msh",
+					    transf = {
+						    1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0,
+					    },
+				    },
+				    {
+                        materials = { "vehicle/train/br627_glass.mtl", },
+					    mesh = "vehicle/train/br627/br627.0_glass_LOD1.msh",
+					    transf = {
+						    1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0,
+					    },
+				    },
+				    {
+                        animations = {
+		                    close_all_doors = {
+			                    forward = false,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0.8, 0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+                            close_doors_left = {
+			                    forward = false,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0.8, 0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+                            open_all_doors = {
+			                    forward = true,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0.8, 0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+                            open_doors_left = {
+			                    forward = true,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0.8, 0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+	                    },
+                        materials = { "vehicle/train/br627.0_rumpf.mtl", "vehicle/train/br627_glass.mtl", },
+					    mesh = "vehicle/train/br627/tur_1l_LOD2.msh",
+					    transf = {
+						    1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0,
+					    },
+				    },
+				    {
+					    animations = {
+		                    close_all_doors = {
+			                    forward = false,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, -0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0.8, -0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+                            close_doors_right = {
+			                    forward = false,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, -0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0.8, -0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+                            open_all_doors = {
+			                    forward = true,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, -0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0.8, -0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+                            open_doors_right = {
+			                    forward = true,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, -0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0.8, -0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+	                    },
+                        materials = { "vehicle/train/br627.0_rumpf.mtl", "vehicle/train/br627_glass.mtl", },
+					    mesh = "vehicle/train/br627/tur_1r_LOD2.msh",
+					    transf = {
+						    1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0,
+					    },
+				    },
+				    {
+					    animations = {
+		                    close_all_doors = {
+			                    forward = false,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { -0.8, 0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+                            close_doors_left = {
+			                    forward = false,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { -0.8, 0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+                            open_all_doors = {
+			                    forward = true,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { -0.8, 0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+                            open_doors_left = {
+			                    forward = true,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { -0.8, 0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+	                    },
+                        materials = { "vehicle/train/br627.0_rumpf.mtl", "vehicle/train/br627_glass.mtl", },
+					    mesh = "vehicle/train/br627/tur_2l_LOD2.msh",
+					    transf = {
+						    1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0,
+					    },
+				    },
+				    {
+					    animations = {
+		                    close_all_doors = {
+			                    forward = false,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, -0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { -0.8, -0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+                            close_doors_right = {
+			                    forward = false,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, -0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { -0.8, -0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+                            open_all_doors = {
+			                    forward = true,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, -0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { -0.8, -0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+                            open_doors_right = {
+			                    forward = true,
+			                    params = {
+				                    origin = {
+					                    0, 0, 0,
+				                    },
+				                    keyframes = {
+					                    {
+						                    time = 0,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, 0, 0 }
+					                    }, {
+						                    time = 500,
+						                    rot = { 0, 0, 0 },
+						                    transl = { 0, -0.05, 0 }
+					                    }, {
+						                    time = 2200,
+						                    rot = { 0, 0, 0 },
+						                    transl = { -0.8, -0.05, 0 }
+					                    }
+				                    }
+			                    },
+                                type = "KEYFRAME",
+		                    },
+	                    },
+                        materials = { "vehicle/train/br627.0_rumpf.mtl", "vehicle/train/br627_glass.mtl", },
+					    mesh = "vehicle/train/br627/tur_2r_LOD2.msh",
+					    transf = {
+						    1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0,
+					    },
+				    },
+                    {
+					    materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+                        mesh = "vehicle/train/br627/br627.0_backlight.msh",
+					    transf = {
+						    -1.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0,
+					    },
+				    },
+				    {
+					    materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+                        mesh = "vehicle/train/br627/br627.0_light.msh",
+					    transf = {
+						    -1.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0,
+					    },
+				    },
+                    {
+					    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				    },
+				},
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+		    static = false,
+		    visibleFrom = 400,
+		    visibleTo = 2500,
+        },
+	},
+	metadata = {
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+        labelList = {
+			labels = {
+				{
+					alignment = "CENTER",
+					childId = "RootNode",
+					color = { 0, 0, 0, 1, },
+					fitting = "SCALE",
+					size = { 0.85, 0.2, },
+					transf = {-1, 0, 0, 0, -0, -0, 1, 0, 0, 1, 0, 0, 8.8, 1.41, 2.65 , 1, },
+					type = "LINE_NAME",
+				},
+                {
+					alignment = "CENTER",
+					childId = "RootNode",
+					color = { 0, 0, 0, 1, },
+					fitting = "SCALE",
+					size = { 0.85, 0.2, },
+					transf = { 1, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, 7.95, -1.41, 2.65 , 1, },
+					type = "LINE_NAME",
+				},
+			},
+		},
+        availability = {
+			yearFrom = 1994,
+			yearTo = 2001,
+		},
+		cost = {
+			price = -1,
+		},
+		description = {
+			name = _("br6270_name"),
+		},
+		maintenance = {
+			lifespan = 21915,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 1,
+					color = { 0.4, 0.4, 0.4, },
+					frequency = 20,
+					lifeTime = 0.3,
+					position = { 6.25, 0.65, 3.73, },
+					size01 = { 0.2, 4.0, },
+					velocity = { 0.0, 0.0, 4.0, },
+				},
+			},
+		},
+		railVehicle = {
+			configs = {
+                { axles = { "vehicle/train/br627/br627_rad.msh", },
+                  frontForwardParts = { 11 },
+                  frontBackwardParts = { 20 },
+                  backForwardParts = { 10 },
+                  backBackwardParts = { 19 },
+                },
+                {   axles = { "vehicle/train/br627/br627_rad_LOD1.msh", },
+                    frontForwardParts = { 11 },
+                    frontBackwardParts = { 20 },
+                    backForwardParts = { 10 },
+                    backBackwardParts = { 19 },
+                },
+                {   axles = { "vehicle/train/br627/br627_rad_LOD2.msh", },
+                    frontForwardParts = { 11 },
+                    frontBackwardParts = { 20 },
+                    backForwardParts = { 10 },
+                    backBackwardParts = { 19 },
+                },
+			},
+            engines = {
+				{
+					power = 287.0,
+					tractiveEffort = 100.0,
+					type = "DIESEL",
+				},
+			},
+			soundSet = { name = "train_diesel", horn = "vehicle/truck_modern/horn.wav" },
+			topSpeed = 33.333333333,
+			weight = 34.0,
+		},
+		transportVehicle = {
+			compartments = {
+				{
+					{
+						{
+							capacity = 64,
+							type = "PASSENGERS",
+						},
+					},
+				},
+			},
+			carrier = "RAIL",
+			loadSpeed = 2,
+			multipleUnitOnly = true,
+            reversible = true,
+        },
+        seatProvider = {
+            crewModels = { },
+		    drivingLicense = "RAIL",
+		    seats = {
+                {
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 1,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.1, -0.7, 1.2, 1, }
+				},
+                -- driver reverse
+				{
+                    animation = "driving_upright",
+					crew = true,
+					forward = false,
+					group = 1,
+					transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -10.1, 0.7, 1.2, 1, }
+                },
+
+                -- passengers
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1, 0, 8.8, -1.0, 1.1, 1, },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1, 0, 8.3, -1.0, 1.1, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1, 0, 7.8, -1.0, 1.1, 1, },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1, 0, 7.3, -1.0, 1.1, 1, },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1, 0, 6.8, -1.0, 1.1, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1, 0, 6.3, -1.0, 1.1, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 0, -1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 9.0, 1.0, 1.1, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 0, -1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 8.5, 1.0, 1.1, 1, },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 0, -1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 8.05, 1.0, 1.1, 1, },
+                },
+
+                -- right
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, 4.25, -1.1, 1.2, 1, },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, 4.25, -0.55, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.4, -1.1, 1.2, 1, },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.4, -0.55, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, 2.6, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, 2.6, -0.55, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.9, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.9, -0.55, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, 1.15, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, 1.15, -0.55, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.3, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.3, -0.55, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, -0.3, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, -0.3, -0.55, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1, -0.55, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, -1.8, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, -1.8, -0.55, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.7, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.7, -0.55, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, -3.4, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, -3.4, -0.55, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.2, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.2, -0.55, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, -4.9, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, -4.9, -0.55, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.75, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.75, -0.55, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, -6.45, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, -6.45, -0.55, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.3, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.3, -0.55, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, -8.0, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, -8.0, -0.55, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.7, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.7, -0.55, 1.2, 1, },
+                },
+
+                -- left
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = {-1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 5.8, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = {-1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 5.8, 0.55, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.9, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.9, 0.55, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = {-1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 4.25, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = {-1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 4.25, 0.55, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.4, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.4, 0.55, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 2.6, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 2.6, 0.55, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.9, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.9, 0.55, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1.15, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1.15, 0.55, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.3, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.3, 0.55, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -0.3, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -0.3, 0.55, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1, 0.55, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -1.8, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -1.8, 0.55, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.7, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.7, 0.55, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -3.4, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -3.4, 0.55, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.2, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.2, 0.55, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -4.9, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = {- 1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -4.9, 0.55, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.75, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.75, 0.55, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -6.45, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -6.45, 0.55, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.3, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.3, 0.55, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -8.0, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -8.0, 0.55, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.7, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+					crew = false,
+					group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.7, 0.55, 1.2, 1, },
+                },
+            },
+		},
+	},
+    version = 1,
+}
+end

@@ -1,0 +1,54 @@
+function data()
+return {
+	matConfigs = {
+		{ 0, }, 
+	},
+	subMeshes = {
+		{
+			indices = {
+				normal = {
+					count = 3144,
+					offset = 12736,
+				},
+				position = {
+					count = 3144,
+					offset = 19024,
+				},
+				tangent = {
+					count = 3144,
+					offset = 9592,
+				},
+				uv0 = {
+					count = 3144,
+					offset = 15880,
+				},
+			},
+			materials = {
+				"vehicle/train/br627_glass.mtl", 
+			},
+		}, 
+	},
+	vertexAttr = {
+		normal = {
+			count = 216,
+			numComp = 3,
+			offset = 3520,
+		},
+		position = {
+			count = 4488,
+			numComp = 3,
+			offset = 5104,
+		},
+		tangent = {
+			count = 3520,
+			numComp = 4,
+			offset = 0,
+		},
+		uv0 = {
+			count = 1368,
+			numComp = 2,
+			offset = 3736,
+		},
+	},
+}
+end

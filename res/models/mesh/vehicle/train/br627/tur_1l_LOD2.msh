@@ -1,0 +1,102 @@
+function data()
+return {
+	animations = {
+		opend1 = {
+			type = "KEYFRAME",
+			params = {
+				origin = {
+					0, 0, 0,
+				},
+				keyframes = {
+					{
+						time = 0,
+						rot = { 0, 0, 0 },
+						transl = { 0, 0, 0 }
+					}, {
+						time = 500,
+						rot = { 0, 0, 0 },
+						transl = { 0, 0.05, 0 }
+					}, {
+						time = 2200,
+						rot = { 0, 0, 0 },
+						transl = { 0.8, 0.05, 0 }
+					}
+				}
+			}
+		},
+
+	},
+    matConfigs = {
+		{ 0, 0, }, 
+	},
+	subMeshes = {
+		{
+			indices = {
+				normal = {
+					count = 1320,
+					offset = 6844,
+				},
+				position = {
+					count = 1320,
+					offset = 9484,
+				},
+				tangent = {
+					count = 1320,
+					offset = 5524,
+				},
+				uv0 = {
+					count = 1320,
+					offset = 8164,
+				},
+			},
+			materials = {
+				"vehicle/train/br627.0_rumpf.mtl", 
+			},
+		}, {
+			indices = {
+				normal = {
+					count = 168,
+					offset = 10972,
+				},
+				position = {
+					count = 168,
+					offset = 11308,
+				},
+				tangent = {
+					count = 168,
+					offset = 10804,
+				},
+				uv0 = {
+					count = 168,
+					offset = 11140,
+				},
+			},
+			materials = {
+				"vehicle/train/br627_glass.mtl", 
+			},
+		}, 
+	},
+	vertexAttr = {
+		normal = {
+			count = 1032,
+			numComp = 3,
+			offset = 2224,
+		},
+		position = {
+			count = 1068,
+			numComp = 3,
+			offset = 4456,
+		},
+		tangent = {
+			count = 2224,
+			numComp = 4,
+			offset = 0,
+		},
+		uv0 = {
+			count = 1200,
+			numComp = 2,
+			offset = 3256,
+		},
+	},
+}
+end
